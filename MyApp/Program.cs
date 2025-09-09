@@ -8,10 +8,10 @@ static void ShowGreeting()
     try
     {
         string userName = Environment.UserName;
-        Console.WriteLine($"Hello, {userName}!");
+        Console.WriteLine($"Hi, {userName}!");
     }
     catch
     {
-        Console.WriteLine("Hello, User!");
+        Console.WriteLine("Hi, User!");
     }
 }
