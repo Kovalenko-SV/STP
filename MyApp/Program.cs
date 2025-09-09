@@ -2,6 +2,7 @@
 Console.WriteLine($"Hello, Word!");
 ShowGreeting();
 ShowCurrentTime();
+ShowSystemInfo();
 
 static void ShowGreeting()
 {
