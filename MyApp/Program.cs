@@ -1,4 +1,5 @@
 ﻿
+Console.WriteLine("Greeting Application Started");
 Console.WriteLine($"Hello, Word!");
 ShowGreeting();
 ShowCurrentTime(); 
@@ -8,16 +9,29 @@ static void ShowGreeting()
     try
     {
         string userName = Environment.UserName;
-        Console.WriteLine($"Hi, {userName}!");
-        Console.WriteLine("Welcome to our application!"); 
+        Console.WriteLine($"Hello and welcome, {userName}!");
+    }
+    catch
+    {
+        Console.WriteLine("Hello, User!");
+    }
+    
+    ShowAdditionalGreeting();
+}
+
+
+static void ShowAdditionalGreeting()
+{
+    try
+    {
+        string userName = Environment.UserName;
+        Console.WriteLine($"Hi, {userName}!"); 
     }
     catch
     {
         Console.WriteLine("Hi, User!");
-        Console.WriteLine("Welcome to our application!");
     }
 }
-
 
 static void ShowCurrentTime()
 {
